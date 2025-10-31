@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Printed Christmas Gifts Catalog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.imgur.com/3xQFQvZ.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      animation: rainbowText 3s infinite;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #ff4444;
+      animation: shadowText 15s infinite;
+    }
+    .catalog {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .announce {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .item {
+      background-color: #fff;
+      color: #333;
+      border-radius: 10px;
+      margin: 15px;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+      animation: shadowBox 15s infinite;
+    }
+    .item img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .item h2 {
+      font-size: 1.2em;
+      margin: 10px 0 5px;
+    }
+    .item p {
+      margin: 5px 0;
+    }
+    .stock {
+      color: red;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #ccc;
+    }
+    @keyframes shadowBox {
+      0% { box-shadow: 0 0 30px #ff4444; }
+      25% { box-shadow: 0 0 39px #44efff }
+      50% { box-shadow: 0 0 30px #037003; }
+      75% { box-shadow: 0 0 39px #44efff; }
+      100% { box-shadow: 0 0 30px #ff4444; }
+    }
+    @keyframes shadowText {
+      0% { text-shadow: 0 0 30px #ff4444; }
+      25% { text-shadow: 0 0 39px #44efff; }
+      50% { text-shadow: 0 0 30px #037003; }
+      75% { text-shadow: 0 0 39px #44efff; }
+      100% { text-shadow: 0 0 30px #ff4444; }
+    }
+    @keyframes rainbowText {
+      0% { color: #ff4444; }
+      50% { color: #44efff; }
+      100% { color: #ff4444; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Layden's Christmas Catalog</h1>
+    <p>Handcrafted with love and holiday cheer</p>
+  </header>
+
+  <section class="catalog">
+    <div class="item">
+      <img src="snowflakeOrnament.jpg" alt="Snowflake Ornament" />
+      <h2>Snowflake Ornament</h2>
+      <p>Price: $5</p>
+      <p>Elegant and lightweight wooden ornament, designed with love and care, perfect for your tree! Doubles as Keychain.</p>
+      <h5 class="stock">In stock</h5>
+    </div>
+    <div class="item">
+      <img src="santaLithophane.jpg" alt="Santa Lithophane" />
+      <h2>Santa Lithophane</h2>
+      <p>Price: $15</p>
+      <p>A charming lightbox to add to the growing heap of decorations!</p>
+      <h5 class="stock">In stock</h5>
+    </div>
+    <div class="item">
+      <img src="santaFigurine.jpg" alt="Santa Figurine" />
+      <h2>Santa Figurine</h2>
+      <p>Price: $5.00</p>
+      <p>A charming desk companion for the season.</p>
+      <h5 class="stock">In stock</h5>
+    </div>
+    <div class="item">
+      <img src="gift3.jpg" alt="Levitating Sleigh" />
+      <h2>Levitating Sleigh</h2>
+      <p>Price: $60:00</p>
+      <p>A charming desk companion for the season.</p>
+      <h5 class="stock">Currently Out of Stock</h5>
+    </div>
+  </section>
+  <section class="announce">
+    <div class="announcements">
+      <h4>Prices subject to Change</h4>
+    </div>
+  </section>
+  <footer>
+    <p>&copy 2025 Incendiary Studios. All rights reserved.</p>
+  </footer>
+</body>
+</html>
